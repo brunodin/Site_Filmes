@@ -1,0 +1,47 @@
+:root {
+    --bg-dark: #1a2f3a;
+    --logo-height: 100px;
+    --header-height: 100px;
+    --aside-width: 250px;
+    --footer-height: 40px;
+
+    --shadow:
+        0 2px 23px 0 rgba(0, 0, 0, 0.1),
+        0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Layout Grid */
+
+.app {
+    margin: 0;
+    display: grid;
+    grid-template-columns: var(--aside-width) 1fr;
+    grid-template-rows:
+        var(--header-height) 1fr var(--footer-height);
+    grid-template-areas:
+        "header content"
+        "menu content"
+        "footer footer";
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+header.header {
+    grid-area: header;
+}
+
+aside.menu-navegacao {
+    grid-area: menu;
+}
+
+main.conteudo {
+    grid-area: content;
+}
+
+footer.footer {
+    grid-area: footer;
+}

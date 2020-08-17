@@ -1,0 +1,20 @@
+
+main ul.lista-filmes{
+}
+
+main ul.lista-filmes a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-weight: 300;
+    
+}
+main ul.lista-filmes a li:hover {
+    background: linear-gradient(#07a7e3 0%, 
+    #32dac3 100%);
+}
+main ul.lista-filmes li span{
+    margin-left: 15px;
+    font-size: 1.3em;
+    background-color: none;
+}
